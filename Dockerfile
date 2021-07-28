@@ -22,6 +22,7 @@ RUN set -e; \
     apt-get clean; \
     rm -rf /var/tmp/* /tmp/* /var/lib/apt/lists/*
 
+# see: https://calibre-ebook.com/download_linux
 RUN set -e; \
     wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
 
